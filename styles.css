@@ -22,3 +22,7 @@ body {
     flex-grow: 1;
     border: solid 1px black;    
  }
+
+ .coloredCell {
+    background-color: black;
+ }
