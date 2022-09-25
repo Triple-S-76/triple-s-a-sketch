@@ -7,8 +7,8 @@ body {
 #canvas {
     display: flex;
     flex-direction: column;
-    width: 60vw;
-    height: 60vh;
+    width: 50vw;
+    height: 50vh;
     border: solid 100px #d40e18;
     border-radius: 50px;
     background-color: lightgrey;
