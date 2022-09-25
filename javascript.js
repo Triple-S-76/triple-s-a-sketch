@@ -17,7 +17,7 @@ function addCells(num) {
     }    
 }
 
-addCells(50);
+addCells(80);
 
 let allCellsCollection = document.getElementsByClassName('allCells');
 let allCellsArray = Array.from(allCellsCollection);
