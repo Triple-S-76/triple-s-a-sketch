@@ -7,8 +7,39 @@
     <script defer src="javascript.js"></script>
 </head>
 <body>
-    <h1>Triple-S-A-Sketch</h1>
+    
+    <fieldset class="setup">Would you like to use a pen or a pencil crayon?
+        <input type="radio" name="pen-or-pencil" class="pen-or-pencil" id="pen" value="pen" checked>Pen
+        <input type="radio" name="pen-or-pencil" class="pen-or-pencil" id="pencil-crayon" value="pencil-crayon">Pencil Crayon
+    </fieldset>
 
-    <div id="canvas"></div>
+    <fieldset class="setup">How many pixels would you like?
+        <input id="pixels" value="25"><button id="reset-btn">Reset Entire Sketch Pad</button>
+    </fieldset>
+    
+    <fieldset class="setup">How big would you like the canvas?    
+        <input type="radio" class="canvas-size" name="canvas-size" id="small" value="small">Small
+        <input type="radio" class="canvas-size" name="canvas-size" id="medium" value="medium" checked>Medium
+        <input type="radio" class="canvas-size" name="canvas-size" id="large" value="large">Large
+    </fieldset>
+    
+    <fieldset class="colors">
+        <input type="radio" name="color-picker" id="classic" class="color" value="#454746">Classic
+        <input type="radio" name="color-picker" id="black" class="color" value="black" checked>Black
+        <input type="radio" name="color-picker" id="red" class="color" value="red">Red
+        <input type="radio" name="color-picker" id="blue" class="color" value="blue">Blue
+        <input type="radio" name="color-picker" id="green" class="color" value="green">Green
+        <input type="radio" name="color-picker" id="yellow" class="color" value="yellow">Yellow
+        <input type="radio" name="color-picker" id="orange" class="color" value="orange">Orange
+        <input type="radio" name="color-picker" id="purple" class="color" value="purple">Purple
+        <input type="radio" name="color-picker" id="brown" class="color" value="brown">Brown
+        <input type="radio" name="color-picker" id="random" class="color" value="random">Random
+    </fieldset>
 
+    <button class="setup" id="btn" >Click Here To Start</button>
+
+<div id="sketchcontainer">
+    <h1 id="title">Triple-S-A-Sketch</h1>
+    <div id="canvas" class="canvas-medium"></div>
+</div>
 </body>
